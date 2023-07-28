@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./design/favicon2.ico">
+  <!--Title of the webpage-->
+  <title>Todo app</title>
+   <!--Link to the css file-->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <!--Main Section-->
+  <main>
+    <!-- Todo app wrapper -->
+    <section class="wrapper">
+      <!-- Header section with todo app title and theme switch button -->
+        <header>
+            <h1>Todo</h1>
+            <button class="btn theme-btn light">
+              <!-- Theme switch icon (sun or moon) displayed here -->
+              <img src="./images/icon-moon.svg" alt="moon svg">
+            </button>
+        </header>
+        <!-- Form to add new todo item -->
+        <form>
+            <span class="round"></span>
+            <input type="text" id="todo-input" placeholder="Create a new todo...">
+           <button class="add-todo"></button>
+        </form>
+        <!-- Container to display the todo list -->
+        <div class="todo-container">
+            <ul class="todos">
+            </ul>
+            <!-- Actions section (e.g., item count, clear completed button) -->
+            <div class="actions">
+                <p class="left-items"><span id="count">0</span> items left</p>
+                
+                <a href="#" class="clear-completed-btn">Clear Completed</a>
+            </div>
+            <!-- Filters section (e.g., All, Active, Completed) -->
+            <div class="filters">
+              <a href="#" class="filter-btns all active ">All</a>
+                <a href="#" class="filter-btns live ">Active</a>
+                <a href="#" class="filter-btns completed-btn ">Completed</a>
+            </div>
+        </div>
+        <!-- Helper info for drag and drop functionality -->
+        <p class="drag-help-info">Drag and drop to reorder list</p>
+    </section>
+</main>
+<!-- Link to the JavaScript file -->
+  <script src="index.js" defer></script>
+  </body>
+  </html>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
